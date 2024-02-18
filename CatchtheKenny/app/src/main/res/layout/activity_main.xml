@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoretext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timetext">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/kenny" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="192dp"
+            android:onClick="score"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/kenny" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="1dp"
+        android:text="Time:"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="9dp"
+        android:text="Score : "
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
